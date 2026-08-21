@@ -34,7 +34,6 @@ public class ShoppingCartTest {
         );
     }
 
-    //test assumption
     @Test
     void rejectsUnknownItemsAssumingOnlyApplesAndOrangesAreValid() {
         assertThrows(
