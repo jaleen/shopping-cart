@@ -34,8 +34,9 @@ public class ShoppingCartTest {
         );
     }
 
+    //test assumption
     @Test
-    void rejectsUnknownItems() {
+    void rejectsUnknownItemsAssumingOnlyApplesAndOrangesAreValid() {
         assertThrows(
                 IllegalArgumentException.class,
                 () -> cart.checkout(List.of("Banana"))
